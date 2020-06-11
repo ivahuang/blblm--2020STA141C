@@ -1,0 +1,18 @@
+---
+title: "About"
+output: html_notebook
+---
+
+
+Usage:
+
+Using this package, one can use bag of little bootstrap in linear regression models and generalized linear regression models, which is the importance of the package. Default splits of your data are 10, and default bootstrapping times are 1000. 
+
+Outputs: 
+
+Coefficients, sigma (CI) for the fit, for each subsample, and for each bootstrap can all be retrieved. You need to specify the family of glm you use whendoing generalized linear regression. Details are given below.
+
+Other information:
+1) lm() and glm() functionsa are from {stats} package and they serve as the base for coefficients, sigma, etc.
+
+2) Bag of Little Bootstraps (BLB), a new procedure which incorporates features of both the bootstrap and subsampling to yield a robust, computationally efficient means of assessing the quality of estimators. BLB is well suited to modern parallel and distributed computing architectures and furthermore retains the generic applicability and statistical efficiency of the bootstrap.
